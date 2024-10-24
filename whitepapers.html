@@ -5,9 +5,9 @@
 <title>Whitepapers | 5GIF 6G Cooperation Group</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_import/css/mystyle.58d2e932.css">
+<link rel="preload" as="style" href="./_import/css/mystyle.7164a8dc.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_import/css/mystyle.58d2e932.css">
+<link rel="stylesheet" type="text/css" href="./_import/css/mystyle.7164a8dc.css">
 <link rel="modulepreload" href="./_observablehq/client.896e7142.js">
 <link rel="modulepreload" href="./_observablehq/runtime.5a1f8ac1.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.21ff87fa.js">
@@ -57,6 +57,7 @@ import {define} from "./_observablehq/client.896e7142.js";
 import {registerFile} from "./_observablehq/stdlib.21ff87fa.js";
 
 registerFile("./docs/6GCG - C2 - NUS - Integrated Sensing and Comm - v2-clean.pdf", {"name":"./docs/6GCG - C2 - NUS - Integrated Sensing and Comm - v2-clean.pdf","mimeType":"application/pdf","path":"./_file/docs/6GCG - C2 - NUS - Integrated Sensing and Comm - v2-clean.900612c7.pdf","lastModified":1727690136577,"size":316391});
+registerFile("./docs/6GCG-Sustainability.pdf", {"name":"./docs/6GCG-Sustainability.pdf","mimeType":"application/pdf","path":"./_file/docs/6GCG-Sustainability.c9056c62.pdf","lastModified":1729795915679,"size":971388});
 
 define({id: "6f0ae764", inputs: ["$"], outputs: ["showLogin","getCurrentUser","logOut"], body: async ($) => {
 const {showLogin, getCurrentUser, logOut} = await import("./_import/components/fbauth.5787231d.js");
@@ -81,11 +82,14 @@ logOut();
 return {showLogin,getCurrentUser,logOut};
 }});
 
-define({id: "02550b6a", inputs: ["FileAttachment"], outputs: ["x","url"], body: (FileAttachment) => {
+define({id: "d645eb97", inputs: ["FileAttachment"], outputs: ["x","url"], body: (FileAttachment) => {
 var x=[];
 
 var url=new URL(FileAttachment("./docs/6GCG - C2 - NUS - Integrated Sensing and Comm - v2-clean.pdf").href);
 document.getElementById("pdf0").href=url.pathname;
+
+var url=new URL(FileAttachment("./docs/6GCG-Sustainability.pdf").href);
+document.getElementById("pdf1").href=url.pathname;
 
 return {x,url};
 }});
@@ -100,7 +104,7 @@ return {x,url};
   </ol>
   <div id="observablehq-search"><input type="search" placeholder="Search"></div>
   <div id="observablehq-search-results"></div>
-  <script>{const o=document.querySelector("#observablehq-search");o.setAttribute("data-shortcut",`${/Mac|iPhone/.test(navigator.platform)?"\u2318":"Alt-"}K`);const t=o.querySelector("input"),r=()=>import("./_observablehq/search.2b760720.js");t.addEventListener("focus",r,{once:!0}),t.addEventListener("keydown",r,{once:!0});const c=document.querySelector("#observablehq-sidebar-toggle");addEventListener("keydown",e=>{(e.code==="KeyK"&&e.metaKey&&!e.altKey&&!e.ctrlKey||e.key==="/"&&!e.metaKey&&!e.altKey&&!e.ctrlKey&&e.target===document.body)&&(c.checked?t.focus():(c.click(),t.focus(),c.click()),t.select(),e.preventDefault())});}</script>
+  <script>{const o=document.querySelector("#observablehq-search");o.setAttribute("data-shortcut",`${/Mac|iPhone/.test(navigator.platform)?"\u2318":"Alt-"}K`);const t=o.querySelector("input"),r=()=>import("./_observablehq/search.4853c435.js");t.addEventListener("focus",r,{once:!0}),t.addEventListener("keydown",r,{once:!0});const c=document.querySelector("#observablehq-sidebar-toggle");addEventListener("keydown",e=>{(e.code==="KeyK"&&e.metaKey&&!e.altKey&&!e.ctrlKey||e.key==="/"&&!e.metaKey&&!e.altKey&&!e.ctrlKey&&e.target===document.body)&&(c.checked?t.focus():(c.click(),t.focus(),c.click()),t.select(),e.preventDefault())});}</script>
   <ol>
     <li class="observablehq-link observablehq-link-active"><a href="./whitepapers">Whitepaper</a></li>
     <li class="observablehq-link"><a href="./members">Members</a></li>
@@ -187,8 +191,8 @@ moveChild("#rightmenubar","#observablehq-sidebar");
 <h1> 6GCG - Whitepapers</h1>
 </div>
 <h2 id="recently-published" tabindex="-1"><a class="observablehq-header-anchor" href="#recently-published">Recently published</a></h2>
-<div class="observablehq observablehq--block"><!--:02550b6a:--></div>
-<div class="grid grid-cols-1"> 
+<div class="observablehq observablehq--block"><!--:d645eb97:--></div>
+<div class="grid grid-cols-2"> 
 <div class="card" "="">
 <h3 style="font-style:Sentance">6GCG - ICAS Whitepaper</h3>
 <h4> Aug 2024 </h4>
@@ -205,6 +209,22 @@ It provides an in-depth analysis of the `Sensing and Communication` paradigm as 
 </div>
 <p><a id="pdf0" class="ui primary button" style="float:right">Download PDF </a></p>
 </div>
+<div class="card" "="">
+<h3 style="font-style:Sentance">Sustainability &amp; Role of 6G</h3>
+<h4> Oct 2024 </h4>
+<hr>
+<div class="carditem">
+ <a target="_blank" style="padding-top:2px;min-width:fit-content" href="./_file/docs/6GCG-Sustainability.pdf">
+<img class=" pdfthumbnail" src="./_file/docs/6GCG-Sustainability.e1dfdcee.jpg" height="200px">
+</a>
+<div>
+<p style="padding:1em;flex-grow:1">
+This report is consolidation of views from 6GCG members on “Sustainability” in the context of IMT-2030 and is defined as one of the applications of 6G Network/System. The whitepaper introduces the key components of “Sustainability” and how the different players in the telecom value-chain can take the right steps to ensure the sustainability goals for IMT2030.
+</p>
+</div>
+</div>
+<p><a id="pdf1" class="ui primary button" style="float:right">Download PDF </a></p>
+</div>
 </div>
 <hr>
 <h1 id="draft-papers" tabindex="-1"><a class="observablehq-header-anchor" href="#draft-papers">Draft Papers</a></h1>
@@ -218,11 +238,6 @@ It provides an in-depth analysis of the `Sensing and Communication` paradigm as 
 <div class="card draft">
 <h2 id="recommendation-on-strategic-national-spectrum-roadmap-for-6-g" tabindex="-1"><a class="observablehq-header-anchor" href="#recommendation-on-strategic-national-spectrum-roadmap-for-6-g">Recommendation on Strategic National Spectrum roadmap for 6G</a></h2>
 <p>This paper is a recommendation from 6G Coordination Group (6GCG) members towards the need for National Roadmap that secures developments for spectrum needs for 6G</p>
-<p><a class="ui red button" href="https://5gindiaforum.sharepoint.com/:w:/r/sites/6gcg/Shared%20Documents/General/Whitepapers/Sept%202024%20deadline/Sustainability/6GCG%20-%20Sustainability%20-%20%20rev%202%20-%2028Sep_Latest.docx?d=wccc579b3b50d403d8598ed3de80b0e14&amp;csf=1&amp;web=1&amp;e=u00WJw" target="_blank" rel="noopener noreferrer"> <i class="icon lock"></i> Contribute </a></p>
-</div>
-<div class="card draft">
-<h2 id="sustainability-and-role-of-6-g" tabindex="-1"><a class="observablehq-header-anchor" href="#sustainability-and-role-of-6-g">Sustainability &amp; Role of 6G</a></h2>
-<p>This report is consolidation of views from 6GCG members on “Sustainability” in the context of IMT-2030 and is defined as one of the applications of 6G Network/System. The whitepaper introduces the key components of “Sustainability” and how the different players in the telecom value-chain can take the right steps to ensure the sustainability goals for IMT2030.</p>
 <p><a class="ui red button" href="https://5gindiaforum.sharepoint.com/:w:/r/sites/6gcg/Shared%20Documents/General/Whitepapers/Sept%202024%20deadline/Sustainability/6GCG%20-%20Sustainability%20-%20%20rev%202%20-%2028Sep_Latest.docx?d=wccc579b3b50d403d8598ed3de80b0e14&amp;csf=1&amp;web=1&amp;e=u00WJw" target="_blank" rel="noopener noreferrer"> <i class="icon lock"></i> Contribute </a></p>
 </div>
 </div>
@@ -264,7 +279,7 @@ It provides an in-depth analysis of the `Sensing and Communication` paradigm as 
   <div class="ui horizontal inverted small divided link list">   
   <span class="item" href="#">Copyright © 2024</span>
     
-    <span class="item">Build : October 24, 2024 (Rev 0.11) | production</span>
+    <span class="item">Build : October 25, 2024 (Rev 0.11) | production</span>
     </div>
 </div>
 </div>
