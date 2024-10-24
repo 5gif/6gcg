@@ -1,6 +1,6 @@
 // import firebase from "firebase/compat/app";
 import * as firebaseui from "../../_node/firebaseui@6.1.0/index.468a2399.js";
-import { firebaseConfig } from "../firebasecfg.d82a3da1.js";
+import { firebaseConfig } from "../firebasecfg.0f1bccce.js";
 import { initializeApp } from "../../_node/firebase@undefined/app.72883a21.js";
 
 import {

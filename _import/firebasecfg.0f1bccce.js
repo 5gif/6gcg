@@ -1,6 +1,6 @@
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCt853alX1tUmIS-KKty33HHZLqi6-HDHQ",
+  apiKey: "undefined",
   authDomain: "spectrum-84a8f.firebaseapp.com",
   projectId: "spectrum",
   storageBucket: "spectrum.appspot.com",
